@@ -1,0 +1,51 @@
+{
+  "name": "@tbd54566975/web5-react-native-metro-config",
+  "version": "0.1.0",
+  "description": "Metro config to enable web5 to work on react native",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "react-native": "src/index.js",
+  "source": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "react-native",
+    "web5",
+    "tbd"
+  ],
+  "repository": "https://github.com/tbd54566975/web5-react-native-metro-config",
+  "author": "tbd <tshamilov@tdb.email> (https://github.com/tbd54566975)",
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/tbd54566975/web5-react-native-metro-config/issues"
+  },
+  "homepage": "https://github.com/tbd54566975/web5-react-native-metro-config#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">= 16.0.0"
+  },
+  "devDependencies": {
+    "release-it": "^15.11.0"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "release v${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": false
+  }
+}
