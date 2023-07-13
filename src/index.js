@@ -10,8 +10,10 @@ const config = {
     }),
   },
   resolver: {
+    sourceExts: ['mjs'],
     resolveRequest: (context, moduleName, platform) => {
       //  cherrypick node bundle
+      // TODO: deprecated in later web5 versions
       if (moduleName === 'eccrypto') {
         return {
           filePath: `${currentDir}/node_modules/eccrypto/index.js`,
@@ -291,6 +293,8 @@ const config = {
           type: 'sourceFile',
         };
       }
+
+      //* cherrypick node pkg. messy dep
       if (moduleName === 'ulid') {
         return {
           filePath: `${currentDir}/node_modules/ulid/dist/index.esm.js`,
