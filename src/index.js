@@ -10,17 +10,9 @@ const config = {
     }),
   },
   resolver: {
-    sourceExts: ['mjs'],
+    // TODO: remove after rn73
+    sourceExts: ['ts', 'tsx', 'js', 'jsx', 'json', 'cjs', 'mjs'],
     resolveRequest: (context, moduleName, platform) => {
-      //  cherrypick node bundle
-      // TODO: deprecated in later web5 versions
-      if (moduleName === 'eccrypto') {
-        return {
-          filePath: `${currentDir}/node_modules/eccrypto/index.js`,
-          type: 'sourceFile',
-        };
-      }
-
       // provide the omitted entrypoints
       if (moduleName === '@decentralized-identity/ion-tools') {
         return {
