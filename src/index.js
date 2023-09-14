@@ -44,6 +44,34 @@ const config = {
           type: 'sourceFile',
         };
       }
+      // remove after removing named exports from upstream
+      if (moduleName === '@tbd54566975/dwn-sdk-js/stores') {
+        return {
+          filePath: `${currentDir}/node_modules/@tbd54566975/dwn-sdk-js/dist/esm/src/index-stores.js`,
+          type: 'sourceFile',
+        };
+      }
+      // remove after removing named exports from upstream
+      if (moduleName === '@tbd54566975/dwn-sdk-js/tests') {
+        return {
+          filePath: `${currentDir}/node_modules/@tbd54566975/dwn-sdk-js/dist/esm/tests/test-suite.js`,
+          type: 'sourceFile',
+        };
+      }
+      // remove after removing named exports from upstream
+      if (moduleName === '@web5/crypto/utils') {
+        return {
+          filePath: `${currentDir}/node_modules/@web5/crypto/dist/esm/utils.js`,
+          type: 'sourceFile',
+        };
+      }
+      // remove after removing named exports from upstream
+      if (moduleName === '@web5/dids/utils') {
+        return {
+          filePath: `${currentDir}/node_modules/@web5/dids/dist/esm/utils.js`,
+          type: 'sourceFile',
+        };
+      }
       if (moduleName === 'blockstore-core') {
         return {
           filePath: `${currentDir}/node_modules/blockstore-core/dist/src/index.js`,
