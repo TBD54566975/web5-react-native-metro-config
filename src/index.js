@@ -45,30 +45,9 @@ const config = {
         };
       }
       // remove after removing named exports from upstream
-      if (moduleName === '@tbd54566975/dwn-sdk-js/stores') {
-        return {
-          filePath: `${currentDir}/node_modules/@tbd54566975/dwn-sdk-js/dist/esm/src/index-stores.js`,
-          type: 'sourceFile',
-        };
-      }
-      // remove after removing named exports from upstream
       if (moduleName === '@tbd54566975/dwn-sdk-js/tests') {
         return {
           filePath: `${currentDir}/node_modules/@tbd54566975/dwn-sdk-js/dist/esm/tests/test-suite.js`,
-          type: 'sourceFile',
-        };
-      }
-      // remove after removing named exports from upstream
-      if (moduleName === '@web5/crypto/utils') {
-        return {
-          filePath: `${currentDir}/node_modules/@web5/crypto/dist/esm/utils.js`,
-          type: 'sourceFile',
-        };
-      }
-      // remove after removing named exports from upstream
-      if (moduleName === '@web5/dids/utils') {
-        return {
-          filePath: `${currentDir}/node_modules/@web5/dids/dist/esm/utils.js`,
           type: 'sourceFile',
         };
       }
@@ -314,18 +293,10 @@ const config = {
         };
       }
 
-      //* cherrypick node pkg. messy dep
-      if (moduleName === 'ulid') {
-        return {
-          filePath: `${currentDir}/node_modules/ulid/dist/index.esm.js`,
-          type: 'sourceFile',
-        };
-      }
-
       //* reference: NOOP a package
-      if (moduleName === 'node:crypto') {
-        return { type: 'empty' };
-      }
+      // if (moduleName === 'package') {
+      //   return { type: 'empty' };
+      // }
 
       //* reference: manually resolve submodules
       // if (context.originModulePath.search("ipfs-unixfs-importer")) {
