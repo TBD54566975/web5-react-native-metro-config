@@ -292,6 +292,12 @@ const config = {
           type: 'sourceFile',
         };
       }
+      if (moduleName === 'uint8-varint') {
+        return {
+          filePath: `${currentDir}/node_modules/uint8-varint/dist/src/index.js`,
+          type: 'sourceFile',
+        };
+      }
 
       //* reference: NOOP a package
       // if (moduleName === 'package') {
