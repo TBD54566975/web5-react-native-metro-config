@@ -14,12 +14,6 @@ const config = {
     sourceExts: ['ts', 'tsx', 'js', 'jsx', 'json', 'cjs', 'mjs'],
     resolveRequest: (context, moduleName, platform) => {
       // provide the omitted entrypoints
-      if (moduleName === '@decentralized-identity/ion-tools') {
-        return {
-          filePath: `${currentDir}/node_modules/@decentralized-identity/ion-tools/dist/esm/index.js`,
-          type: 'sourceFile',
-        };
-      }
       if (moduleName === '@ipld/dag-cbor') {
         return {
           filePath: `${currentDir}/node_modules/@ipld/dag-cbor/src/index.js`,
