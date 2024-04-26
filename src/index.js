@@ -32,12 +32,6 @@ const config = {
           type: 'sourceFile',
         };
       }
-      if (moduleName === '@tbd54566975/dwn-sdk-js') {
-        return {
-          filePath: `${currentDir}/node_modules/@tbd54566975/dwn-sdk-js/dist/esm/src/index.js`,
-          type: 'sourceFile',
-        };
-      }
       // remove after removing named exports from upstream
       if (moduleName === '@tbd54566975/dwn-sdk-js/tests') {
         return {
@@ -253,6 +247,12 @@ const config = {
       if (moduleName === 'uint8arraylist') {
         return {
           filePath: `${currentDir}/node_modules/uint8arraylist/dist/src/index.js`,
+          type: 'sourceFile',
+        };
+      }
+      if (moduleName === 'uint8arrays') {
+        return {
+          filePath: `${currentDir}/node_modules/uint8arrays/dist/src/index.js`,
           type: 'sourceFile',
         };
       }
