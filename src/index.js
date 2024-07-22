@@ -71,73 +71,73 @@ const config = {
       }
       if (moduleName === 'multiformats') {
         return {
-          filePath: `${currentDir}/node_modules/multiformats/src/index.js`,
+          filePath: `${currentDir}/node_modules/multiformats/dist/src/index.js`,
           type: 'sourceFile',
         };
       }
       if (moduleName === 'multiformats/basics') {
         return {
-          filePath: `${currentDir}/node_modules/multiformats/src/basics.js`,
+          filePath: `${currentDir}/node_modules/multiformats/dist/src/basics.js`,
           type: 'sourceFile',
         };
       }
       if (moduleName === 'multiformats/bases/base32') {
         return {
-          filePath: `${currentDir}/node_modules/multiformats/src/bases/base32.js`,
+          filePath: `${currentDir}/node_modules/multiformats/dist/src/bases/base32.js`,
           type: 'sourceFile',
         };
       }
       if (moduleName === 'multiformats/bases/base58') {
         return {
-          filePath: `${currentDir}/node_modules/multiformats/src/bases/base58.js`,
+          filePath: `${currentDir}/node_modules/multiformats/dist/src/bases/base58.js`,
           type: 'sourceFile',
         };
       }
       if (moduleName === 'multiformats/bases/base64') {
         return {
-          filePath: `${currentDir}/node_modules/multiformats/src/bases/base64.js`,
+          filePath: `${currentDir}/node_modules/multiformats/dist/src/bases/base64.js`,
           type: 'sourceFile',
         };
       }
       if (moduleName === 'multiformats/block') {
         return {
-          filePath: `${currentDir}/node_modules/multiformats/src/block.js`,
+          filePath: `${currentDir}/node_modules/multiformats/dist/src/block.js`,
           type: 'sourceFile',
         };
       }
       if (moduleName === 'multiformats/cid') {
         return {
-          filePath: `${currentDir}/node_modules/multiformats/src/cid.js`,
+          filePath: `${currentDir}/node_modules/multiformats/dist/src/cid.js`,
           type: 'sourceFile',
         };
       }
       if (moduleName === 'multiformats/codecs/raw') {
         return {
-          filePath: `${currentDir}/node_modules/multiformats/src/codecs/raw.js`,
+          filePath: `${currentDir}/node_modules/multiformats/dist/src/codecs/raw.js`,
           type: 'sourceFile',
         };
       }
       if (moduleName === 'multiformats/hashes/digest') {
         return {
-          filePath: `${currentDir}/node_modules/multiformats/src/hashes/digest.js`,
+          filePath: `${currentDir}/node_modules/multiformats/dist/src/hashes/digest.js`,
           type: 'sourceFile',
         };
       }
       if (moduleName === 'multiformats/hashes/hasher') {
         return {
-          filePath: `${currentDir}/node_modules/multiformats/src/hashes/hasher.js`,
+          filePath: `${currentDir}/node_modules/multiformats/dist/src/hashes/hasher.js`,
           type: 'sourceFile',
         };
       }
       if (moduleName === 'multiformats/hashes/identity') {
         return {
-          filePath: `${currentDir}/node_modules/multiformats/src/hashes/identity.js`,
+          filePath: `${currentDir}/node_modules/multiformats/dist/src/hashes/identity.js`,
           type: 'sourceFile',
         };
       }
       if (moduleName === 'multiformats/hashes/sha2') {
         return {
-          filePath: `${currentDir}/node_modules/multiformats/src/hashes/sha2.js`,
+          filePath: `${currentDir}/node_modules/multiformats/dist/src/hashes/sha2.js`,
           type: 'sourceFile',
         };
       }
